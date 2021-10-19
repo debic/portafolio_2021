@@ -4,39 +4,88 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Debi Codriansky</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/css/pruebacss.css">
+	<link rel="stylesheet" href="style/css/style.css">
+	<link rel="stylesheet" href="style/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link href='style/css/nodeCursor.css' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>
-		<header>
-		<nav>
-		<ul>
-			<li> <a href="index.html">Inicio</a></li>
-			<li> <a href="proyectos.html">Proyectos</a></li>
-			<li> <a href="servicios.html">Servicios</a></li>
-			<li> <a href="contacto.html">Contacto</a> </li>
-		</ul>
+	
+
+	
+
+
+
+		<a href="#navigation" class="nav-trigger">
+			Menu <span></span>
+		</a>
+
+		<nav class="nav-container " id="navigation">
+
+
+			<ul class="nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="proyectos.html">Proyectos</a></li>
+		
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
 		</nav>
-	</header>
+	
 
 
-<main>
-<div class=formulario_contacto >
 
-	<h1> ¡Hablemos!</h1>
-	<form>
-	  <input type="text" id="nombre" name="nombre" value="Nombre"><br>  
-	  <input type="text" id="apellido" name="apellido" value="Apellido"><br>
- 	  <textarea name="message" >Mensaje</textarea><br>
- 	  <input type="submit" value="Enviar"> <br>
-	</form>
-</div>
+	<div class=formulario >
 
-	</main>
+		
+		<div class="">
+			<h2>Trabajemos juntos</h2>
+			<form action="/action_page.php">
+				<label for="fname">Nombre y apellido</label>
+				<input type="text" id="fname" name="firstname" placeholder="">
+
+				<label for="lname">Correo electrónico</label>
+				<input type="text" id="lname" name="lastname" placeholder="">
 
 
-	<footer>
+				<label for="subject">Mensaje</label>
+				<textarea id="subject" name="subject" placeholder="" style="height:150px"></textarea>
+
+				<input class="boton2 azul" type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+
+
+<footer>
+		<div class="footer_logo">
+			<img class="footer_logo" width="400" height="400" src="img/logo.svg" alt="proyecto">
+		</div>
+		<div class="footer_redes_sociales">
+			<a><img id="linkedin" class="red_social" width="50" height="50" src="img/rrss-05.svg"> </a>
+			<img class="red_social" width="50" height="50" src="img/rrss-07.svg">
+			<img class="red_social" width="50" height="50" src="img/rrss-08.svg">
+			<img class="red_social" width="50" height="50" src="img/rrss-07.svg">
+			<img class="red_social" width="50" height="50" src="img/rrss-08.svg">
+		</div>
 		
 	</footer>
-	
+<script type="text/javascript">
+  var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+    body = document.getElementsByTagName('body')[0];
+
+navTrigger.addEventListener('click', toggleNavigation);
+
+function toggleNavigation(event) {
+  event.preventDefault();
+  body.classList.toggle('nav-open');
+}
+</script>
 </body>
 </html>

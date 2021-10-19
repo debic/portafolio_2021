@@ -4,28 +4,29 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Debi Codriansky</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="style/css/pruebacss.css">
+	<link rel="stylesheet" href="style/css/style.css">
+	<link rel="stylesheet" href="style/css/main.css">
+	<link rel="stylesheet" href="style/css/mobile.css">
+	<link href='style/css/nodeCursor.css' rel='stylesheet' type='text/css'>
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+
 
 
 </head>
 <body>
 	
-	<div class='cursor' id="cursor"></div>
+<div class="node" id="node"></div>
+<div class="cursor" id="cursor"></div>
 
-
-
-
-	<!-- Coloqué el menú dentro de este div porque quiero que sea de esos menus transparentes(se que debe haber formas más fáciles) -->
-	
 
 	<div class="container grid">
 
-		<a href="#navigation" class="nav-trigger">
+		<a href="#navigation" class="nav-trigger nodeHover">
 			Menu <span></span>
 		</a>
 
@@ -33,14 +34,15 @@
 
 
 			<ul class="nav">
-				<li><a href="index.html">Inicioo</a></li>
-				<li><a href="proyectos.html">Proyectos</a></li>
+				<li><a class="nodeHover" href="index.html">Inicio</a></li>
+				<li><a class="nodeHover"href="proyectos.html">Proyectos</a></li>
 		
-				<li><a href="contacto.html">Contacto2</a></li>
+				<li><a class="nodeHover" href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav>
-		<header>
 
+
+		<header>
 			<div class="intro" id="inicio">
 				<div>
 					<img class="banner_inicio_logo" src="img/logo.svg" alt="proyecto">
@@ -49,10 +51,9 @@
 					<h2 class="banner_inicio_texto"> ¡Hagamos realidad tu proyecto juntos!</h2>
 				</div>
 			</div>
-
-
-
 		</header>
+
+
 		<div class="alineacion_h">
 			<section id="divisor1" class="">
 				
@@ -60,16 +61,16 @@
 		</div>
 
 
-		<section id="rrss" class="">
+		<section id="rrss" class="rrss">
 
 
-							<a href=""class="red_social"><i class='fab fa-linkedin-in'></i> </a>
+							<a href=""class="red_social nodeHover"><i class='fab fa-linkedin-in'></i> </a>
 
 
-						<a href="" class="red_social"><i class="fab fa-behance"></i></a>
+						<a href="" class="red_social nodeHover"><i class="fab fa-behance"></i></a>
 
 
-						<a href="" class="red_social"><i class="fab fa-dribbble"></i></a>
+						<a href="" class="red_social nodeHover"><i class="fab fa-dribbble"></i></a>
 </section>
 
 
@@ -77,15 +78,18 @@
 			<div class="divisor2"></div>
 		</section>
 
-		
-
-
+				  <section class="deslizar" id="deslizar">
+				    <span class="scroll-icon">
+				      <span class="scroll-icon__dot"></span>
+				    </span>
+				  </section>
 
 		<section id="divisor3" class=""> 
 			<div class="divisor3"></div>
 		</section>
 
 		<section id="espacio_blanco" class=""> </section>
+		<section id="nada_derecho" class=""> </section>
 
 		<section id="cruz" class=""> 
 			<div class="cruz"></div>
@@ -99,7 +103,7 @@
 
 		<div id="titulo" class=""> 
 			<div class="proyectos_titulo" >
-				<h1> Portafolio </h1>
+				<h2> Portafolio </h2>
 			</div>
 		</div>
 
@@ -122,38 +126,41 @@
 
 		<div class="proyectos_portadas flex-container">
 		
-			<div class="Proyecto_item">
-				<img class="prueba" src="img/berco.jpg" alt="proyecto">
-				<a class="" href="post_proyect.html"> <div class="overlay"> </div></a>
-					<div class="text">Proyecto editorial</div>
-				</div>
-			
-			
-			<div class="Proyecto_item">
-				<img class="prueba" src="img/bifix.jpg" alt="proyecto">
-				<a class="" href="post_proyect.html"> <div class="overlay"> </div></a>
-					<div class="text">Proyecto editorial</div>
-				</div>
-		
-		
-		<div class="Proyecto_item">
-				<img class="prueba" src="img/mexico.jpg" alt="proyecto">
-				<a class="" href="post_proyect.html"> <div class="overlay"> </div></a>
-					<div class="text">Proyecto editorial</div>
-				</div>
-	
-		
-			<div class="Proyecto_item">
-				<img class="prueba" src="img/pinguinos.jpg" alt="proyecto">
+		<div class="Proyecto_item nodeHover">
+				<a class="link" href="post_proyect.html"><img class="prueba" src="img/bifix.jpg" alt="proyecto">
 				<div class="overlay">
 					<div class="text">Proyecto editorial</div>
-				</div>
+				</div></a>
+			</div>
+			
+			
+		<div class="Proyecto_item nodeHover">
+				<a class="link" href="post_proyect.html"><img class="prueba" src="img/berco.jpg" alt="proyecto">
+				<div class="overlay">
+					<div class="text">Proyecto editorial</div>
+				</div></a>
+			</div>
+		
+		
+		<div class="Proyecto_item nodeHover">
+				<a class="link" href="post_proyect.html"><img class="prueba" src="img/mexico.jpg" alt="proyecto">
+				<div class="overlay">
+					<div class="text">Proyecto editorial</div>
+				</div></a>
+			</div>
+	
+		
+		<div class="Proyecto_item nodeHover">
+				<a class="link" href="post_proyect.html"><img class="prueba" src="img/pinguinos.jpg" alt="proyecto">
+				<div class="overlay">
+					<div class="text">Proyecto editorial</div>
+				</div></a>
 			</div>
 		
 
 </div>
 
-<div class="proyectos_portadas_boton ">
+<div class="proyectos_portadas_boton nodeHover">
 		<a href="proyectos.html" class="boton azul">Ver más proyectos</a>
 </div>
 
@@ -163,39 +170,32 @@
 	<div id="servicios" class="servicios">
 		<h2> Servicios </h2>
 
-		<main>
-			<table>
+		<section class="tabla">
+				<div class="tabla_servicio1"> 
+					<img  class="servicios_img" src="img/web.svg">
+					<h3>Branding</h3>
+					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean </p>
+				</div>
 
-				<tr>
-					<th> <img  class="servicios_img" src="img/web.svg" ></th>
-					<th> <img  class="servicios_img" src="img/web.svg" ></th>
-					<th> <img  class="servicios_img" src="img/web.svg" ></th>
-					<th> <img  class="servicios_img" src="img/web.svg" ></th>
-				</tr>
+				<div class="tabla_servicio1"> 
+					<img  class="servicios_img" src="img/web.svg">
+					<h3>Editorial</h3>
+					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean </p>
+				</div>
 
-				<tr>
-					<th> Branding</th>
-					<th> Editorial</th>
-					<th> Diseño web</th>
-					<th> Desarrollo web</th>
-				</tr>
+				<div class="tabla_servicio1"> 
+					<img  class="servicios_img" src="img/web.svg">
+					<h3>Diseño web</h3>
+					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean </p>
+				</div>
 
-				<tr>
-					<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean </td>
-					<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean .</td>
-					<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean.</td>
-					<td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean.</td>
-				</tr>
-
-			</table>
-		</main>
-
+				<div class="tabla_servicio1"> 
+					<img  class="servicios_img" src="img/web.svg">
+					<h3>Desarrollo web</h3>
+					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean </p>
+				</div>
+		</section>
 	</div>
-
-
-
-
-
 
 
 
@@ -203,61 +203,55 @@
 
 		<div class="yo_foto"> </div>
 
-		<div class="yo_info  ">
+		<div class="yo_info">
 			<div class="yo_texto ">
 				<h2> Sobre mí </h2>
 				<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
 				</p>
 			</div>
-
-			<div class="yo_cv " > 
-				<img src="img/cv.svg" >
+			<div class="yo_cv nodeHover" > 
+				<a href="img/cv.pdf" download> <img class="yo_cv_svg"width="400" height="400" src="img/cv.svg" > </a>
 			</div>
-
 		</div>
 
-		
 	</div>
 
 
-		
-
-	<div class=formulario >
-
-		
-		<div class="">
-			<h2>Trabajemos juntos</h2>
-			<form action="/action_page.php">
-				<label for="fname">Nombre y apellido</label>
-				<input type="text" id="fname" name="firstname" placeholder="">
-
-				<label for="lname">Correo electrónico</label>
-				<input type="text" id="lname" name="lastname" placeholder="">
-
-
-				<label for="subject">Mensaje</label>
-				<textarea id="subject" name="subject" placeholder="" style="height:150px"></textarea>
-
-				<input class="boton2 azul" type="submit" value="Submit">
-			</form>
-		</div>
-	</div>
 
 
 <footer>
+
 		<div class="footer_logo">
 			<img class="footer_logo" width="400" height="400" src="img/logo.svg" alt="proyecto">
 		</div>
-		<div class="footer_redes_sociales">
-			<a><img id="linkedin" class="red_social" width="50" height="50" src="img/rrss-05.svg"> </a>
-			<img class="red_social" width="50" height="50" src="img/rrss-07.svg">
-			<img class="red_social" width="50" height="50" src="img/rrss-08.svg">
-			<img class="red_social" width="50" height="50" src="img/rrss-07.svg">
-			<img class="red_social" width="50" height="50" src="img/rrss-08.svg">
-		</div>
+			<a href=""class="red_social_footer nodeHover"><i class='fab fa-whatsapp'></i> </a>
+			<a href="" class="red_social_footer nodeHover"><i class="fas fa-envelope"></i></a>
+			<a href=""class="red_social_footer nodeHover"><i class='fab fa-linkedin-in'></i> </a>
+			<a href="" class="red_social_footer nodeHover"><i class="fab fa-behance"></i></a>
+			<a href="" class="red_social_footer nodeHover"><i class="fab fa-dribbble"></i></a>
+
 		
 	</footer>
+	 <script src="src/nodecursor-agnostic.js"></script>
+    <script>
+        // init plugin
+        var initCursor = new NodeCursor({
+            cursor : true, // enable cursor
+            node : true, // enable node
+            cursor_velocity : 1, // cursor velocity : 1 = default w1 = slower, >1 = faster
+            node_velocity : 0.35, // cursor velocity : 1 = default w1 = slower, >1 = faster
+            native_cursor : 'none', // default,  grab, pointer ( all cursor's css properties)
+            element_to_hover : '.nodeHover', // // element that will trigger cursor anime on hover :  'disable', or any element : 'a', '.class', '#id' 
+            cursor_class_hover : 'disable', // 'disable', or any class name (without dot) - ex : expand, reduce relative to your css
+            node_class_hover : 'expand', // 'disable', or any class name  (without dot) - ex : expand, reduce relative to your css
+            hide_mode : true, // hide node and cursor if inactive
+            hide_timing : 2000, // hide timing if inactive
+        });
+    </script>
+
+
 <script type="text/javascript">
+
   var navTrigger = document.getElementsByClassName('nav-trigger')[0],
     body = document.getElementsByTagName('body')[0];
 
@@ -267,6 +261,14 @@ function toggleNavigation(event) {
   event.preventDefault();
   body.classList.toggle('nav-open');
 }
+
+function custom(event){
+  var el = document.getElementById("hov");
+	el.style.top = event.clientY + "px";
+	el.style.left = event.clientX + "px";
+		}
+
+document.getElementById("main").addEventListener('mousemove', custom);
 </script>
 </body>
 </html>
