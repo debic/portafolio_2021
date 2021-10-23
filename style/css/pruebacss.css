@@ -1,4 +1,37 @@
 @charset "UTF-8";
+/* VARIEBLES */
+/* VARIEBLES */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .alineacion_h {
+    display: none; }
+  .divisor2 {
+    display: none; }
+  .rrss {
+    display: none !important; }
+  .divisor3 {
+    display: none !important; }
+  .cruz {
+    display: none !important; }
+  .espacio {
+    display: none !important; }
+  .divisor4 {
+    display: none !important; }
+  .banner_inicio_logo {
+    width: 100%; }
+  .Proyecto_item {
+    position: relative;
+    width: 100vw; }
+  .tabla_servicio1 {
+    width: 70vw; }
+  .tabla_servicio1 img {
+    width: 60%;
+    height: 60%; }
+  .yo {
+    display: flex;
+    flex-direction: column !important; }
+  .yo_info {
+    width: 100%; } }
+
 /* GENERAL */
 body {
   font-family: 'Poppins', sans-serif;
@@ -812,3 +845,87 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 100vw; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 1.3; }
+  p {
+    font-size: 2rem !important; }
+  .nav-trigger {
+    position: fixed;
+    z-index: 4;
+    top: 60px;
+    right: 60px;
+    height: 50px;
+    width: 80px;
+    overflow: hidden;
+    color: transparent;
+    white-space: nowrap;
+    text-indent: 100%; }
+  .nav-trigger span,
+  .nav-trigger span::before,
+  .nav-trigger span::after {
+    position: absolute;
+    height: 8px;
+    width: 600px;
+    background: #fff; }
+  .nav-trigger span::before {
+    transform: translateY(-20px); }
+  .nav-trigger span::after {
+    transform: translateY(20px); }
+  .alineacion_h {
+    display: none !important; }
+  .divisor2 {
+    display: none !important; }
+  .rrss {
+    display: none !important; }
+  .divisor3 {
+    display: none !important; }
+  .cruz {
+    display: none !important; }
+  .espacio {
+    display: none !important; }
+  .divisor4 {
+    display: none !important; }
+  .deslizar {
+    margin-top: 99%; }
+  .banner_inicio_texto {
+    margin-right: 3%;
+    margin-left: 3%; }
+  .banner_inicio_logo {
+    width: 100%; }
+  .proyectos_texto p {
+    font-size: 2rem !important; }
+  .Proyecto_item {
+    position: relative;
+    width: 100vw; }
+  .tabla_servicio1 {
+    width: 70vw; }
+  .tabla_servicio1 img {
+    width: 60%;
+    height: 60%; }
+  .tabla_servicio1 h3 {
+    font-size: 2rem !important; }
+  .boton {
+    font-size: 2rem; }
+  .yo {
+    display: flex;
+    flex-direction: column !important; }
+  .yo_texto {
+    padding-left: 0%;
+    width: 80% !important; }
+  .yo_texto p {
+    text-align: center; }
+  .yo_texto h2 {
+    text-align: center;
+    margin-bottom: 5% !important; }
+  .yo_info {
+    width: 100%;
+    flex-direction: column !important;
+    padding-top: 15%; }
+  .yo_foto {
+    display: none !important;
+    height: 0% !important; }
+  .yo_cv img {
+    margin-top: 15%; } }

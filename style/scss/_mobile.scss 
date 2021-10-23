@@ -1,0 +1,63 @@
+/* VARIEBLES */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+.alineacion_h{
+  display: none;
+}
+
+.divisor2{
+  display: none;
+}
+
+
+.rrss{
+  display: none !important;
+}
+
+.divisor3{
+  display: none !important;
+}
+
+.cruz{
+  display: none !important;
+}
+.espacio{
+  display: none !important;
+}
+
+.divisor4{
+  display: none !important;
+}
+
+.banner_inicio_logo{
+  width: 100% ;
+}
+
+.Proyecto_item {
+  position: relative;
+  width: 100vw; }
+
+
+  .tabla_servicio1{
+   width: 70vw;
+}
+
+  .tabla_servicio1 img{
+  width: 60%;
+  height: 60%;
+  }
+
+.yo{
+  display: flex;
+  flex-direction: column !important;
+}
+
+.yo_info {
+  width: 100%; 
+}
+
+}
+
+
+
+
