@@ -1,3 +1,5 @@
+$celeste: #7CC3C6;
+
 /* GENERAL */
 
 body{
@@ -24,12 +26,12 @@ body{
 
 
 h1{
-	color: #7CC3C6;
+	color: $celeste;
 	text-align: center;
 }
 
 h2{
-	color: #7CC3C6;
+	color: $celeste;
 	text-align: center;
 	font-size: 2rem;
 	font-family: 'Megant', sans-serif;
@@ -134,7 +136,7 @@ main {
 
 .nav-open .nav-trigger span::before,
 .nav-open .nav-trigger span::after {
-  background: #7CC3C6;
+  background: $celeste;
 }
 
 .nav-open .nav-trigger span::before {
@@ -213,7 +215,7 @@ font-weight: 400;
 }
 
 .nav a:hover {
-color: #7CC3C6;
+color: $celeste;
 }
 
 
@@ -232,7 +234,7 @@ color: #7CC3C6;
 transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0,1);
 	transform: scale(0,1);
-	color: #7CC3C6;
+	color: $celeste;
 }
 
 .nav a:hover:after {
@@ -492,7 +494,7 @@ width: 50vw;
 }
 
 .azul{
-	background-color: #7CC3C6;
+	background-color: $celeste;
 }
 
 /* INICIO-SERVICIOS */
@@ -590,17 +592,17 @@ th{
   width: 66%;  
   height: 60vh;
   margin: auto;  
-   display: flex;
+  display: flex;
   height: 60vh;
   align-items:center;
-   background-image: url("../../img/sobre_mi.jpg");
-   background-size:cover;
+  background-image: url("../../img/sobre_mi.jpg");
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
 .yo_foto{
   width:40%;
-  height:40vh;
+  height:60vh;
   background-size: 100% 100%;
   background-repeat:no-repeat;
   background:url("../../img/perfil.jpg");
@@ -659,7 +661,7 @@ height: 100%;
 }
 
 label{
-color: #7cc3c6;
+color:$celeste;
 font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }
@@ -718,7 +720,7 @@ margin-right: 10px;
 
 .red_social_footer:hover {
  opacity: 0.7;
- color: #7CC3C6;
+ color: $celeste;
 }
 
 
@@ -896,26 +898,6 @@ justify-content: center;
 
 
 
-
-
-
-.hero-image{
-  width: 100%;
-   height: 500px;
-background-image: url("../../img/bifix.jpg");
- background-size: cover;
-  position: relative;
-  overflow: hidden;
-
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-
-
-}
-
 .black{
   position: absolute;
   top: 0;
@@ -928,37 +910,95 @@ background-attachment: fixed;
   justify-content: center;
 }
 
-.hero-image h2{
+.hero-image-font h2{
 font-size: 3rem;
 color: white;
 }
+
+.hero-image-bifix{
+  width: 100%;
+   height: 500px;
+background-image: url("../../img/bifix.jpg");
+ background-size: cover;
+  position: relative;
+  overflow: hidden;
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-berco{
+  width: 100%;
+   height: 500px;
+background-image: url("../../img/berco_portada.jpg");
+ background-size: cover;
+  position: relative;
+  overflow: hidden;
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-vecinos{
+width: 100%;
+height: 500px;
+background-image: url("../../img/vecinos_hero.jpg");
+background-size: cover;
+position: relative;
+overflow: hidden;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.hero-image-mexico{
+width: 100%;
+height: 500px;
+background-image: url("../../img/mexico_hero.jpg");
+background-size: cover;
+position: relative;
+overflow: hidden;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 
 .proyect_info{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #1F1F1F;
 
 }
 
 .proyect_info_descripcion{
   width: 70%;
   padding: 10%;
-}
 
-.proyect_info_descripcion p{
-color: #454545;
+  p{
+color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
 
-.proyect_info_descripcion h2{
-  color: #454545;
+h2{
+  color: white;
   text-align: left;
   font-size: 2rem;
   font-family: 'DIN', sans-serif;
   margin-bottom: 30px;
 }
+}
+
+
+
 
 .proyect_info_herramientas{
   display: flex;
@@ -980,7 +1020,7 @@ color: #454545;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100vw;
 }
 
 
