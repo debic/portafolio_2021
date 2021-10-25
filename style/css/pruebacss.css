@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* VARIEBLES */
 /* VARIEBLES */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (mix-device-width: 480px) {
   .alineacion_h {
     display: none; }
   .divisor2 {
@@ -48,7 +48,7 @@ body {
 
 @font-face {
   font-family: "Megant";
-  src: url("../../font/MegantÇ-Personal-Use.ttf"); }
+  src: url("../../font/MegantÇ-Personal-Use.ttf"); }
 
 h1 {
   color: #7CC3C6;
